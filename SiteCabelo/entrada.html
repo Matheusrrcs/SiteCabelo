@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="w-100">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,shrink-to-fit=no, user-scalable=no">
+    <title>Entrada/Cadastro</title>
+    <link rel="stylesheet" href="assets/css/entrada.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+   
+</head>
+
+<body class="w-100">
+    
+   <div class="container-fluid">
+   <div class="row">
+     <div class="col-lg-6 col-md-6 d-none d-md-block image-container"></div>
+     
+     <div class="col-lg-6 col-md-6 form-container" >
+         <div class="col-lg-8 col-md-12  col-sm-9 col-xs-12 form-box text-center " id="login"> 
+              <div class="log mb-3" >
+                <a href="index.html"> <img src="assets/imagens/logocomtitulo.png" alt="" width="150px"></a> 
+              </div>
+              <div class="social-icons mb-4">
+                <img src="assets/imagens/fb.png" alt="">
+                <img src="assets/imagens/gp.png" alt="">
+              </div>
+              <form method="POST" >
+                  <div class="form-input">
+                      <div class="name text-left">E-mail</div>
+                      <input type="email" required>
+                  </div>
+                   <div class="form-input">
+                    <div class="name text-left">Senha</div>
+                      <input type="password" required id="senhaLogin"><label for="">
+                        <button type="button" id="eye-password" onclick="mostrarSenha()"><img src="assets/imagens/eye-password.png" alt="" width="30px" ></button>
+                   </div>
+                   <div class="row mb-3">
+                       <div class="col-6 d-flex">
+                           <div class="custom-control custom-checkbox">
+                               <input type="checkbox" class="custom-control-input" id="cb1">
+                               <label class="custom-control-label text-white" for="cb1">
+                                   Lembre-me
+                               </label>
+                           </div>
+                       </div>
+                       <div class="col-6 text-right">   
+                           <a href="Esqueceu-senha.html" class="forget-link">Esqueceu a senha?</a>
+                       </div>
+                   </div>
+                   <div class="text-left mb-3">
+                     <button type="submit" class="btn">Entrar</button>
+                   </div>
+                   <div class="col-12 text-left" id="register"   >
+                    Não está registrado?
+                    <a href="cadasto.html" class="not-register"> Crie uma conta</a>
+                </div>
+              </form>
+    
+
+
+         </div>
+     </div>
+
+ 
+   </div>
+   </div>
+ 
+
+<script>
+
+function mostrarSenha(){
+   var mostra= document.getElementById("senhaLogin");
+  
+    if(mostra.type == "password"){
+      mostra.type ="text";
+    }
+    else{
+      mostra.type ="password";
+    }
+   
+       
+}
+
+</script>
+
+<script src="assets/js/jquery-3.5.1.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/index.js"></script>
+ 
+</body>
+</html>

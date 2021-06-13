@@ -1,0 +1,136 @@
+body{
+  background: rgb(255, 255, 255);
+    font-family: 'Nunito',sans-serif;
+}
+
+.navbar{
+    position:fixed;
+    top:0;
+    z-index: 99999;
+}
+
+ #main-navbar{
+  padding: 1rem 25px;
+ }
+ 
+.navbar.active {
+  transition: all 0.5s ;
+   background-color: rgba(15, 12, 12, 0.7);
+ }
+ 
+
+ .nav-Scrolled{
+    background: linear-gradient(rgba(0,0,0,.9),rgba(0,0,0,.0),rgba(0,0,0,.0)),url(../imagens/foto_principal.png)  ;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center top;
+    width: 100%;
+   height: 100vh;
+}
+
+.scrolldown{
+  position: absolute;
+  top: 80%;
+  right:98%;
+  transform: translate(-50%,-50%);
+  width: 2px;
+  height: 100px;
+  background: transparent;
+}
+ 
+ .scrolldown .slideT{
+  color: white;
+  position: relative; 
+  left: -1px;
+  bottom: 15px;
+   white-space: nowrap;
+  transform: rotate(270deg)
+}
+ 
+ 
+.scrolldown::before{
+   content: "";
+   position:absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: linear-gradient( transparent,#fff,transparent);
+   animation: animate 2s linear infinite;
+  }
+  
+  @keyframes animate
+  {
+     0%{
+       transform-origin: top;
+       transform: scaleY(0);
+     }
+
+     50%{
+      transform-origin: top;
+      transform: scaleY(1);
+    }
+    
+    51%{
+      transform-origin: bottom;
+      transform: scaleY(1);
+    }
+    100%{
+      transform-origin: bottom;
+      transform: scaleY(0);
+    }
+  }
+   
+  
+
+ .title-section h1{
+   text-align: center;
+   padding-top: 10px;
+   padding-bottom: 10px;
+ }
+
+  
+ .col-md-4{
+  padding-bottom: 40px;
+ 
+}
+.custom-shape-divider-bottom-1609545075 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1609545075 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 154px;
+}
+@media  only screen and (max-width: 920px){
+  .custom-shape-divider-bottom-1609545075 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 50px;
+  }
+}
+
+.custom-shape-divider-bottom-1609545075 .shape-fill {
+  fill: rgb(255, 255, 255);
+}
+  
+   
+.creat img{
+   margin-bottom: -20px;
+}
+
+ .logocriador p{
+    
+   color: black;
+   font-size: .85rem; 
+ }
+ 

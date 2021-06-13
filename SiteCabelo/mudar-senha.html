@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="w-100">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,shrink-to-fit=no, user-scalable=no">
+    <title>Entrada/Cadastro</title>
+    <link rel="stylesheet" href="assets/css/mudar-senha.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+   
+</head>
+
+<body class="w-100">
+    
+   <div class="container-fluid">
+   <div class="row">
+     <div class="col-lg-6 col-md-6 d-none d-md-block image-container"></div>
+     
+     <div class="col-lg-6 col-md-6 form-container" >
+         <div class="col-lg-8 col-md-12  col-sm-9 col-xs-12 form-box text-center " id="login"> 
+              <div class="log mb-3" >
+                <a href="index.html"> <img src="assets/imagens/logocomtitulo.png" alt="" width="150px"></a> 
+              </div>
+              
+              <form  >
+                <div class="form-input">
+                    <div class="name text-left" >Nova senha</div>
+                      <input type="password" required id="senhaLogin">
+                      <button type="button" id="eye-password" onclick="mostrarSenha()"><img src="assets/imagens/eye-password.png" alt="" width="30px" ></button>
+                   </div>
+                   <div class="form-input">
+                    <div class="name text-left" >Confirmar senha</div>
+                      <input type="password" required id="senhaLogin2">
+                      <button type="button" id="eye-password" onclick="mostrarSenha2()"><img src="assets/imagens/eye-password.png" alt="" width="30px" ></button>
+                   </div>
+                 
+                   <div class="row mb-3">
+                       <div class="col-6 text-left">
+                           <a href="entrada.html" class="forget-link">Voltar para o Login</a>
+                       </div>
+                   </div>
+                   <div class="text-left mb-3">
+                     <button type="submit" class="btn">Enviar</button>
+                   </div>
+              </form>
+    
+
+
+         </div>
+     </div>
+
+ 
+   </div>
+   </div>
+ 
+
+   <script>
+
+    function mostrarSenha(){
+       var mostra= document.getElementById("senhaLogin");
+
+        if(mostra.type == "password" ){
+          mostra.type ="text"; 
+        }
+        else{
+          mostra.type ="password";
+         
+        }
+  
+    }
+
+    function mostrarSenha2(){
+       
+       var mostra2= document.getElementById("senhaLogin2");
+
+        if(mostra2.type == "password" ){
+          mostra2.type ="text";
+         
+        }
+      
+        else{
+          mostra2.type ="password";
+         
+        }
+  
+    }
+    
+    </script>
+
+<script src="assets/js/jquery-3.5.1.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/index.js"></script>
+ 
+</body>
+</html>
